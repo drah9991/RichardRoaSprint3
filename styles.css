@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("IceCream1/icecream.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: space-around;
+}
+
+main {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+header {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+}
+
+header li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 4vw;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav {
+    margin-right: auto;
+}
+
+nav a:hover {
+    color: #ffd600;
+}
+
+footer {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: color 0.3s ease;
+}
+
+footer p {
+    position: relative;
+}
+
+footer p:hover {
+    color: #ffd600;
+}
+
+.banner {
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.7);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.banner img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.contenido {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenido h1,
+.contenido h2,
+.texto-lado p,
+.contenido p,
+h1,
+h2 {
+    color: #1a237e;
+}
+
+.imagen-lado img {
+    width: 20vw;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.lado {
+    display: flex;
+    flex: 1;
+}
+
+.texto-lado {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.imagen-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagen-contacto img {
+    width: 40vw;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.lado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imagen-lado,
+.texto-lado {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-lado img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+table {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black;
+    color: #1a237e;
+    border-collapse: collapse;
+}
+
+table tr {
+    width: 10vw;
+    height: 10vh;
+}
+
+th {
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+tr,
+td {
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.imagenlado img {
+    display: flex;
+    width: 20vw;
+    margin-bottom: 20px;
+    height: 35vh;
+}
+
+.contenido section article {
+    display: flex;
+    /* Activa el modelo de caja flexible para los artículos */
+    /* Ancho total del artículo (imagen + texto) */
+    width: 30vw;
+    margin: 10px;
+    /* Márgenes para separar los artículos */
+}
+
+.contenido section article img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3vh;
+}
+
+.contenido section article h3 {
+    padding: 10px;
+}
+
+.contenido section article h2 {
+    margin-top: 0;
+    color: #1a237e;
+}
+
+.mapa {
+    height: 50vh;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapa h2 {
+    text-align: start;
+}
+
+.formulario {
+    width: 30vw;
+    height: auto;
+    margin-top: 2vh;
+    background-color: #fff;
+    display: flex;
+    display: inline-block;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+input[type="submit"] {
+    background-color: #0484fc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+iframe {
+    width: 23vw;
+    height: 48vh;
+    margin-top: 1vh;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid gray;
+    border-radius: 0.5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+article .mapa {}
+
+.raffle {
+    display: flex;
+}
+
+label {
+    /* Asegura que cada label se muestre en una línea */
+}
+
+.formulario .payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.formulario .terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+/* Estilos generales para todos los tamaños de pantalla */
+
+
+/* Móvil */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* Estilos específicos para móviles */
+    body {
+        /* Ajustes de estilo para móviles */
+    }
+    /* Agrega más reglas según sea necesario */
+}
+
+
+/* Tableta */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+    body {
+        /* Ajustes de estilo para tabletas */
+    }
+    /* Agrega más reglas según sea necesario */
+}
+
+
+/* Notebook/Pc */
+
+@media screen and (min-width: 1024px) {
+    /* Estilos específicos para notebooks/PC */
+    body {
+        /* Ajustes de estilo para notebooks/PC */
+    }
+    /* Agrega más reglas según sea necesario */
+}
