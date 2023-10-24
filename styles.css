@@ -31,7 +31,7 @@ header {
     background-color: rgba(51, 51, 51, 0.7);
     width: 100%;
     z-index: 1000;
-    position: sticky;
+    position: relative;
 }
 
 header li {
@@ -66,16 +66,11 @@ footer {
     background-color: rgba(51, 51, 51, 0.7);
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1000;
+    position: static;
     transition: color 0.3s ease;
-}
-
-footer p {
-    position: relative;
 }
 
 footer p:hover {
@@ -83,9 +78,9 @@ footer p:hover {
 }
 
 .banner {
-    width: 70%;
+    width: 80%;
     padding: 20px;
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.26);
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -98,7 +93,8 @@ footer p:hover {
     border-radius: 15px;
 }
 
-.contenido {
+.contenido,
+.contenidoh {
     justify-content: center;
     align-items: center;
     margin-bottom: 90px;
@@ -113,7 +109,8 @@ footer p:hover {
 .texto-lado p,
 .contenido p,
 h1,
-h2 {
+h2,
+.contenidoh {
     color: #1a237e;
 }
 
@@ -121,11 +118,6 @@ h2 {
     width: 20vw;
     max-width: 100%;
     margin-bottom: 20px;
-}
-
-.lado {
-    display: flex;
-    flex: 1;
 }
 
 .texto-lado {
@@ -153,6 +145,16 @@ h2 {
     margin-top: 20px;
 }
 
+.ladoa{
+    display: flex;
+    
+}
+
+.ladosa{
+    display: flex;
+    
+}
+
 .imagen-lado,
 .texto-lado {
     flex: 1;
@@ -162,7 +164,7 @@ h2 {
 .imagen-lado img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
+    border-radius: 3vh;
 }
 
 table {
@@ -203,7 +205,7 @@ td {
     display: flex;
     /* Activa el modelo de caja flexible para los artículos */
     /* Ancho total del artículo (imagen + texto) */
-    width: 30vw;
+    width: 40vh;
     margin: 10px;
     /* Márgenes para separar los artículos */
 }
@@ -288,10 +290,6 @@ article .mapa {}
     display: flex;
 }
 
-label {
-    /* Asegura que cada label se muestre en una línea */
-}
-
 .formulario .payment-options {
     display: flex;
     flex-direction: column;
@@ -316,8 +314,65 @@ label {
     /* Estilos específicos para móviles */
     body {
         /* Ajustes de estilo para móviles */
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    /* Agrega más reglas según sea necesario */
+    .ladoh {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+    .ladoa{
+        display: flex;
+        flex-direction: column;
+    }
+    .lado {
+        flex-direction: column-reverse;
+    }
+    .banner {
+        width: 100%;
+        padding: 0.5vh;
+        background-color: rgba(51, 51, 51, 0.7);
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .contactp {
+        display:flex;
+flex-direction: column-reverse   }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul {
+        align-self: center;
+    }
+    section article {
+        display: flex;
+        margin: 10px;
+    }
+    .contenido section article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido .raffle{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
 
 

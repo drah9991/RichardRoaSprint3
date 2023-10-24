@@ -11,16 +11,18 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="benefitsTips.html">Benefits</a></li>
-                <li><a href="raffle.html">Raffle</a></li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="benefitsTips.html">Benefits</a></li>
+                    <li><a href="raffle.html">Raffle</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="logo">
             <img src="Icecream1/logo.png" alt="Logo">
         </div>
@@ -53,12 +55,18 @@
                     <input type="date" id="date" name="dates" required>
                     <label for="pay">Payment Option</label>
                     <div class="payment-options">
-                        <input type="radio" id="cash" name="pays" required>
-                        <label for="cash">Cash</label>
-                        <input type="radio" id="credit" name="pays" required>
-                        <label for="credit">Credit Card</label>
-                        <input type="radio" id="debit" name="pays" required>
-                        <label for="debit">Debit Card</label>
+                        <div class="options">
+                            <input type="radio" id="cash" name="pays" required>
+                            <label for="cash">Cash</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="credit" name="pays" required>
+                            <label for="credit">Credit Card</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="debit" name="pays" required>
+                            <label for="debit">Debit Card</label>
+                        </div>
                     </div>
                     <label for="message">Message(Optional)</label>
                     <textarea id="message" name="messages" rows="10" cols="40"></textarea>
