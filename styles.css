@@ -62,6 +62,7 @@ nav a:hover {
 }
 
 footer {
+    display: flex;
     font-family: 'Arial', sans-serif;
     background-color: rgba(51, 51, 51, 0.7);
     color: #fff;
@@ -69,7 +70,7 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 1000;
-    position: static;
+    justify-content: center;
     transition: color 0.3s ease;
 }
 
@@ -145,14 +146,14 @@ h2,
     margin-top: 20px;
 }
 
-.ladoa{
+.ladoa {
     display: flex;
-    
+    flex-direction: column;
 }
 
-.ladosa{
+.ladosa {
     display: flex;
-    
+    align-items: center;
 }
 
 .imagen-lado,
@@ -319,18 +320,6 @@ article .mapa {}
         flex-direction: column;
         align-items: center;
     }
-    .ladoh {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: end;
-    }
-    .ladoa{
-        display: flex;
-        flex-direction: column;
-    }
-    .lado {
-        flex-direction: column-reverse;
-    }
     .banner {
         width: 100%;
         padding: 0.5vh;
@@ -340,8 +329,9 @@ article .mapa {}
         margin: auto;
     }
     .contactp {
-        display:flex;
-flex-direction: column-reverse   }
+        display: flex;
+        flex-direction: column-reverse
+    }
     header {
         display: flex;
         flex-direction: column-reverse;
@@ -361,18 +351,18 @@ flex-direction: column-reverse   }
         flex-direction: column;
         align-items: center;
     }
-
-    .contenido section{
+    .contenido section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .contenido .raffle{
+    .contenido .raffle {
         display: flex;
         flex-direction: column-reverse;
     }
-
+    .ladosa {
+        flex-direction: column;
+    }
 }
 
 
