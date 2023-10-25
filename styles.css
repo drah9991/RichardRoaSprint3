@@ -285,10 +285,12 @@ input[type="text"],
     text-align: center;
 }
 
-article .mapa {}
-
 .raffle {
     display: flex;
+}
+
+section article.mapa {
+    align-items: flex-end;
 }
 
 .formulario .payment-options {
